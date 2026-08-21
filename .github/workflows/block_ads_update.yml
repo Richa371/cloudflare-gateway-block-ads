@@ -2,10 +2,11 @@ name: Block ads update
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */12 * * *'
   push:
     branches:
       - '**'
+  workflow_dispatch:
 
 jobs:
   block_ads_update:
